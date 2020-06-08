@@ -669,10 +669,6 @@ namespace ini
 	    
 
 	protected:
-	    DecEncResult() 
-	    {
-	      reset();
-	    }
 
 	    DecEncResult set(DecEncErrorCode errorCode)
 	    {
@@ -689,6 +685,10 @@ namespace ini
 	        lineNumber++;
 	    }
 	public:
+	    DecEncResult() 
+	    {
+	      reset();
+	    }
 	    DecEncErrorCode getErrorCode()
 	    {
 	        return errorCode;
